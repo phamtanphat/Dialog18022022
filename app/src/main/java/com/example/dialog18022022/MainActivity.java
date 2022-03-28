@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.dialog18022022.databinding.ActivityMainBinding;
+import com.example.dialog18022022.databinding.LayoutDialogColorPickerBinding;
 import com.example.dialog18022022.demo_builder_design_pattern.Chicken;
 import com.example.dialog18022022.demo_builder_design_pattern.FastFood;
 import com.example.dialog18022022.demo_builder_design_pattern.Water;
@@ -60,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
 //                .build();
 //
 //        Log.d("BBB",fastFood.toString());
+
+        mBinding.buttonDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LayoutDialogColorPickerBinding binding = LayoutDialogColorPickerBinding.inflate(getLayoutInflater());
+                AppDialog.createColorDialog(MainActivity.this, binding);
+            }
+        });
 
     }
 

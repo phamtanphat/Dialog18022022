@@ -73,7 +73,7 @@
         android:id="@+id/seekBarA"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/seekbarR"
+        app:layout_constraintBottom_toTopOf="@id/seek_bar_r"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewA"
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal" />
@@ -86,7 +86,7 @@
         android:textStyle="bold"
         android:text="R"
         app:layout_constraintBottom_toTopOf="@id/textViewG"
-        app:layout_constraintEnd_toStartOf="@id/seekbarR"
+        app:layout_constraintEnd_toStartOf="@id/seek_bar_r"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewA" />
 
@@ -95,7 +95,7 @@
         android:thumbTint="#ED3333"
         android:progressTint="#ED3333"
         android:paddingVertical="15dp"
-        android:id="@+id/seekbarR"
+        android:id="@+id/seek_bar_r"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/seekBarG"
@@ -126,7 +126,7 @@
         app:layout_constraintBottom_toTopOf="@id/seekBarB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewG"
-        app:layout_constraintTop_toBottomOf="@id/seekbarR" />
+        app:layout_constraintTop_toBottomOf="@id/seek_bar_r" />
 
     <TextView
         android:id="@+id/textViewB"
